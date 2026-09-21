@@ -1,158 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S-K Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+<title>Online Update - Latest Jobs, Results & Updates</title>
 
-    body {
-      background: #f5f5f5;
-      color: #222;
-    }
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-    header {
-      background: #111;
-      color: white;
-      padding: 18px 20px;
-      text-align: center;
-    }
+body{
+  font-family:Arial,sans-serif;
+  background:#f4f6f8;
+  color:#222;
+}
 
-    header h1 {
-      font-size: 28px;
-    }
+header{
+  background:#111827;
+  color:white;
+  padding:18px 15px;
+}
 
-    header p {
-      margin-top: 6px;
-      color: #ccc;
-    }
+.logo{
+  font-size:26px;
+  font-weight:bold;
+}
 
-    .hero {
-      background: white;
-      text-align: center;
-      padding: 55px 20px;
-    }
+.tagline{
+  margin-top:5px;
+  color:#d1d5db;
+  font-size:14px;
+}
 
-    .hero h2 {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
+nav{
+  background:#dc2626;
+  padding:12px;
+  overflow-x:auto;
+  white-space:nowrap;
+}
 
-    .hero p {
-      color: #666;
-      margin-bottom: 25px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-right:18px;
+  font-weight:bold;
+  font-size:14px;
+}
 
-    .button {
-      display: inline-block;
-      background: #111;
-      color: white;
-      padding: 13px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-    }
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:15px;
+}
 
-    .products {
-      padding: 35px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+.search{
+  background:white;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:8px;
+}
 
-    .products h2 {
-      text-align: center;
-      margin-bottom: 25px;
-    }
+.search input{
+  width:100%;
+  padding:13px;
+  border:1px solid #ddd;
+  border-radius:5px;
+  font-size:15px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.notice{
+  background:#fff3cd;
+  padding:12px;
+  border-left:5px solid #f59e0b;
+  margin-bottom:18px;
+  font-size:14px;
+}
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    }
+h2{
+  background:#111827;
+  color:white;
+  padding:10px;
+  margin:20px 0 10px;
+  border-radius:5px;
+  font-size:20px;
+}
 
-    .card .icon {
-      font-size: 55px;
-      margin-bottom: 15px;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
 
-    .card h3 {
-      margin-bottom: 8px;
-    }
+.card{
+  background:white;
+  padding:18px;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
 
-    .card p {
-      color: #666;
-      margin-bottom: 15px;
-    }
+.card h3{
+  color:#dc2626;
+  margin-bottom:8px;
+}
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  </style>
+.card p{
+  font-size:14px;
+  line-height:1.5;
+  color:#555;
+}
+
+.card a{
+  display:inline-block;
+  margin-top:12px;
+  background:#dc2626;
+  color:white;
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:4px;
+  font-size:13px;
+}
+
+footer{
+  margin-top:30px;
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+
+footer a{
+  color:#ddd;
+  margin:0 8px;
+  text-decoration:none;
+  font-size:13px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>S-K Shop</h1>
-    <p>Your Online Shopping Store</p>
-  </header>
+<header>
+  <div class="logo">ONLINE UPDATE</div>
+  <div class="tagline">
+    Latest Jobs, Results, Admit Card & Government Updates
+  </div>
+</header>
 
-  <section class="hero">
-    <h2>Welcome to S-K Shop</h2>
-    <p>Discover amazing products at great prices.</p>
-    <a href="#products" class="button">Shop Now</a>
-  </section>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Latest Jobs</a>
+  <a href="#">Results</a>
+  <a href="#">Admit Card</a>
+  <a href="#">University</a>
+  <a href="#">Scholarship</a>
+  <a href="#">Sarkari Yojana</a>
+</nav>
 
-  <section class="products" id="products">
-    <h2>Our Products</h2>
+<div class="container">
 
-    <div class="grid">
+  <div class="search">
+    <input type="text" placeholder="Search Jobs, Results, Admit Card etc...">
+  </div>
 
-      <div class="card">
-        <div class="icon">👕</div>
-        <h3>Fashion Shirt</h3>
-        <p>Trendy and comfortable shirt.</p>
-        <a href="#" class="button">View Product</a>
-      </div>
+  <div class="notice">
+    📢 <b>Latest Update:</b> सभी महत्वपूर्ण जानकारी के लिए Official Website जरूर देखें।
+  </div>
 
-      <div class="card">
-        <div class="icon">👖</div>
-        <h3>Denim Jeans</h3>
-        <p>Stylish jeans for everyday wear.</p>
-        <a href="#" class="button">View Product</a>
-      </div>
+  <h2>Latest Updates</h2>
 
-      <div class="card">
-        <div class="icon">👟</div>
-        <h3>Fashion Shoes</h3>
-        <p>Comfortable and stylish shoes.</p>
-        <a href="#" class="button">View Product</a>
-      </div>
+  <div class="grid">
 
+    <div class="card">
+      <h3>Latest Job Update</h3>
+      <p>नई सरकारी नौकरी और भर्ती से जुड़ी महत्वपूर्ण जानकारी यहाँ मिलेगी।</p>
+      <a href="#">Read More</a>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2026 S-K Shop. All Rights Reserved.</p>
-  </footer>
+    <div class="card">
+      <h3>Latest Result</h3>
+      <p>University, Board और अन्य परीक्षा के Result की जानकारी।</p>
+      <a href="#">Check Result</a>
+    </div>
+
+    <div class="card">
+      <h3>Admit Card</h3>
+      <p>नई परीक्षा के Admit Card और परीक्षा तिथि की जानकारी।</p>
+      <a href="#">View Update</a>
+    </div>
+
+  </div>
+
+  <h2>Important Categories</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>🎓 University Update</h3>
+      <p>University Admission, Exam, Result और अन्य Updates.</p>
+      <a href="#">View More</a>
+    </div>
+
+    <div class="card">
+      <h3>📚 Scholarship</h3>
+      <p>Scholarship Form, Last Date और जरूरी जानकारी।</p>
+      <a href="#">View More</a>
+    </div>
+
+    <div class="card">
+      <h3>🏛️ Sarkari Yojana</h3>
+      <p>सरकारी योजनाओं और आवेदन से संबंधित जानकारी।</p>
+      <a href="#">View More</a>
+    </div>
+
+    <div class="card">
+      <h3>📝 Admission</h3>
+      <p>College और University Admission की जानकारी।</p>
+      <a href="#">View More</a>
+    </div>
+
+    <div class="card">
+      <h3>📖 Syllabus</h3>
+      <p>Exam Syllabus और तैयारी से संबंधित जानकारी।</p>
+      <a href="#">View More</a>
+    </div>
+
+    <div class="card">
+      <h3>🔧 Important Tools</h3>
+      <p>Online उपयोगी Tools और सरकारी सेवाओं की जानकारी।</p>
+      <a href="#">View More</a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Online Update. All Rights Reserved.</p>
+  <br>
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Disclaimer</a>
+</footer>
 
 </body>
 </html>
