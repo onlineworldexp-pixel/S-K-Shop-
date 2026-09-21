@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S-K Shop</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 6px;
+      color: #ccc;
+    }
+
+    .hero {
+      background: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #111;
+      color: white;
+      padding: 13px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .products {
+      padding: 35px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .card .icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>S-K Shop</h1>
+    <p>Your Online Shopping Store</p>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to S-K Shop</h2>
+    <p>Discover amazing products at great prices.</p>
+    <a href="#products" class="button">Shop Now</a>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon">👕</div>
+        <h3>Fashion Shirt</h3>
+        <p>Trendy and comfortable shirt.</p>
+        <a href="#" class="button">View Product</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">👖</div>
+        <h3>Denim Jeans</h3>
+        <p>Stylish jeans for everyday wear.</p>
+        <a href="#" class="button">View Product</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">👟</div>
+        <h3>Fashion Shoes</h3>
+        <p>Comfortable and stylish shoes.</p>
+        <a href="#" class="button">View Product</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 S-K Shop. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
