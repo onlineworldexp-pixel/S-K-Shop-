@@ -1,201 +1,477 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Admit Card - Online Update</title>
+<title>Latest Admit Card 2026 - Online Update</title>
 
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f4f6f8;
-  color:#222;
+    font-family:Arial,sans-serif;
+    background:#f4f6f8;
+    color:#222;
+    line-height:1.6;
 }
 
 header{
-  background:#111827;
-  color:white;
-  padding:20px 15px;
+    background:#111827;
+    color:white;
+    padding:20px 15px;
+}
+
+.header-box{
+    max-width:1100px;
+    margin:auto;
 }
 
 .logo{
-  font-size:27px;
-  font-weight:bold;
+    font-size:28px;
+    font-weight:bold;
 }
 
-.subtitle{
-  margin-top:5px;
-  color:#d1d5db;
+.tagline{
+    color:#d1d5db;
+    margin-top:4px;
+    font-size:14px;
 }
 
 nav{
-  background:#dc2626;
-  padding:13px 15px;
-  overflow-x:auto;
-  white-space:nowrap;
+    background:#dc2626;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.nav-box{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-right:20px;
-  font-weight:bold;
+    color:white;
+    text-decoration:none;
+    padding:14px 16px;
+    display:block;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#b91c1c;
 }
 
 .container{
-  max-width:1000px;
-  margin:auto;
-  padding:15px;
+    max-width:1100px;
+    margin:auto;
+    padding:20px 15px;
 }
 
 .page-title{
-  background:#111827;
-  color:white;
-  padding:16px;
-  border-radius:7px;
-  margin-bottom:15px;
+    background:#111827;
+    color:white;
+    padding:22px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.page-title h1{
+    font-size:28px;
+}
+
+.page-title p{
+    color:#d1d5db;
+    margin-top:5px;
+}
+
+.search-box{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.search-box input{
+    width:100%;
+    padding:13px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.section-title{
+    font-size:22px;
+    color:#111827;
+    margin:25px 0 12px;
+    border-left:5px solid #dc2626;
+    padding-left:10px;
 }
 
 .card{
-  background:white;
-  padding:20px;
-  margin-bottom:15px;
-  border-radius:8px;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    border:1px solid #eee;
 }
 
 .card h2{
-  color:#dc2626;
-  margin-bottom:10px;
+    color:#111827;
+    font-size:20px;
+    margin-bottom:8px;
 }
 
 .card p{
-  line-height:1.6;
-  color:#555;
+    color:#555;
+    margin-bottom:12px;
 }
 
 .info{
-  margin-top:12px;
-  line-height:1.8;
+    background:#f8fafc;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:12px;
 }
 
 .info b{
-  color:#111827;
+    color:#111827;
 }
 
 .button{
-  display:inline-block;
-  margin-top:15px;
-  padding:10px 16px;
-  background:#dc2626;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
+    display:inline-block;
+    background:#dc2626;
+    color:white;
+    text-decoration:none;
+    padding:10px 17px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#b91c1c;
+}
+
+.notice{
+    background:#fff7ed;
+    border-left:5px solid #f97316;
+    padding:15px;
+    margin:25px 0;
+    border-radius:6px;
+}
+
+.notice b{
+    color:#c2410c;
 }
 
 footer{
-  background:#111827;
-  color:white;
-  text-align:center;
-  padding:25px 10px;
-  margin-top:30px;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:35px;
 }
+
+.footer-links{
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    color:#d1d5db;
+    text-decoration:none;
+    margin:0 8px;
+}
+
+@media(max-width:600px){
+
+    .logo{
+        font-size:24px;
+    }
+
+    .page-title h1{
+        font-size:23px;
+    }
+
+    .card{
+        padding:16px;
+    }
+
+    .card h2{
+        font-size:18px;
+    }
+
+    nav a{
+        padding:12px 14px;
+        font-size:14px;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
 
+
 <header>
-  <div class="logo">ONLINE UPDATE</div>
-  <div class="subtitle">
-    Latest Jobs, Results, Admit Card & Government Updates
-  </div>
-</header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="jobs.html">Latest Jobs</a>
-  <a href="results.html">Results</a>
-  <a href="admit-card.html">Admit Card</a>
-  <a href="#">University</a>
-  <a href="#">Scholarship</a>
-  <a href="#">Sarkari Yojana</a>
-</nav>
+<div class="header-box">
 
-<div class="container">
+<div class="logo">
+ONLINE UPDATE
+</div>
 
-  <div class="page-title">
-    <h1>Latest Admit Card</h1>
-  </div>
-
-  <div class="card">
-
-    <h2>University Admit Card 2026</h2>
-
-    <p>
-      University परीक्षा के Admit Card से संबंधित महत्वपूर्ण
-      जानकारी यहाँ प्रकाशित की जाएगी।
-    </p>
-
-    <div class="info">
-      <b>🎓 Exam:</b> University Examination<br>
-      <b>📅 Exam Date:</b> जल्द अपडेट होगा<br>
-      <b>📋 Admit Card:</b> जल्द उपलब्ध होगा
-    </div>
-
-    <a class="button" href="#">Download Admit Card</a>
-
-  </div>
-
-  <div class="card">
-
-    <h2>Government Exam Admit Card</h2>
-
-    <p>
-      सरकारी एवं प्रतियोगी परीक्षाओं के Admit Card और
-      परीक्षा तिथि की जानकारी यहाँ मिलेगी।
-    </p>
-
-    <div class="info">
-      <b>📝 Exam:</b> Competitive Examination<br>
-      <b>📅 Exam Date:</b> जल्द अपडेट होगा<br>
-      <b>📋 Status:</b> जल्द अपडेट होगा
-    </div>
-
-    <a class="button" href="#">Download Admit Card</a>
-
-  </div>
-
-  <div class="card">
-
-    <h2>Entrance Exam Admit Card</h2>
-
-    <p>
-      Entrance और अन्य परीक्षाओं के Admit Card की जानकारी
-      यहाँ प्रकाशित की जाएगी।
-    </p>
-
-    <div class="info">
-      <b>📝 Exam:</b> Entrance Examination<br>
-      <b>📅 Exam Date:</b> जल्द अपडेट होगा
-    </div>
-
-    <a class="button" href="#">Download Admit Card</a>
-
-  </div>
+<div class="tagline">
+Latest Jobs, Results, Admit Card & Government Updates
+</div>
 
 </div>
 
+</header>
+
+
+<nav>
+
+<div class="nav-box">
+
+<a href="index.html">Home</a>
+
+<a href="jobs.html">Latest Jobs</a>
+
+<a href="results.html">Results</a>
+
+<a href="admit-card.html">Admit Card</a>
+
+<a href="university.html">University</a>
+
+</div>
+
+</nav>
+
+
+<div class="container">
+
+
+<div class="page-title">
+
+<h1>Latest Admit Card 2026</h1>
+
+<p>
+Latest Government, University & Competitive Exam Admit Cards
+</p>
+
+</div>
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Admit Card search करें..."
+onkeyup="searchCards()"
+>
+
+</div>
+
+
+<h2 class="section-title">
+Latest Admit Card
+</h2>
+
+
+<div class="card">
+
+<h2>
+University Examination Admit Card 2026
+</h2>
+
+<p>
+University परीक्षा के Admit Card से संबंधित
+महत्वपूर्ण जानकारी और Download Link यहाँ उपलब्ध होगी।
+</p>
+
+<div class="info">
+
+<b>🎓 Exam:</b>
+University Examination
+
+<br>
+
+<b>📅 Exam Date:</b>
+Official Update के अनुसार
+
+<br>
+
+<b>📄 Admit Card:</b>
+जल्द उपलब्ध होगा
+
+</div>
+
+<a class="button" href="admit-1.html">
+View Details
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Government Exam Admit Card 2026
+</h2>
+
+<p>
+सरकारी एवं प्रतियोगी परीक्षाओं के Admit Card,
+Exam Date और Download Link की जानकारी यहाँ मिलेगी।
+</p>
+
+<div class="info">
+
+<b>📝 Exam:</b>
+Competitive Examination
+
+<br>
+
+<b>📅 Exam Date:</b>
+Official Update के अनुसार
+
+<br>
+
+<b>📄 Status:</b>
+Official Update का इंतजार
+
+</div>
+
+<a class="button" href="admit-2.html">
+View Details
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Entrance Exam Admit Card 2026
+</h2>
+
+<p>
+Entrance और अन्य परीक्षाओं के Admit Card से जुड़ी
+Latest जानकारी यहाँ प्रकाशित की जाएगी।
+</p>
+
+<div class="info">
+
+<b>🎓 Exam:</b>
+Entrance Examination
+
+<br>
+
+<b>📅 Exam Date:</b>
+Official Update के अनुसार
+
+<br>
+
+<b>📄 Admit Card:</b>
+जल्द उपलब्ध होगा
+
+</div>
+
+<a class="button" href="admit-3.html">
+View Details
+</a>
+
+</div>
+
+
+<h2 class="section-title">
+Important Notice
+</h2>
+
+
+<div class="notice">
+
+<b>⚠️ जरूरी सूचना:</b>
+
+<br>
+
+Admit Card से संबंधित किसी भी जानकारी को अंतिम मानने
+से पहले संबंधित University, Board या विभाग की
+Official Website पर जरूर Verify करें।
+
+</div>
+
+
+</div>
+
+
 <footer>
-  <p>© 2026 Online Update. All Rights Reserved.</p>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="jobs.html">Jobs</a>
+
+<a href="results.html">Results</a>
+
+<a href="admit-card.html">Admit Card</a>
+
+<a href="university.html">University</a>
+
+</div>
+
+<p>
+© 2026 Online Update. All Rights Reserved.
+</p>
+
 </footer>
+
+
+<script>
+
+function searchCards(){
+
+    let input =
+    document.getElementById("searchInput")
+    .value
+    .toLowerCase();
+
+    let cards =
+    document.querySelectorAll(".card");
+
+    cards.forEach(function(card){
+
+        let text =
+        card.innerText.toLowerCase();
+
+        if(text.includes(input)){
+
+            card.style.display="block";
+
+        }else{
+
+            card.style.display="none";
+
+        }
+
+    });
+
+}
+
+</script>
+
 
 </body>
 </html>
