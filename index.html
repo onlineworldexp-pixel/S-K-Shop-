@@ -4,248 +4,1200 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Online Update - Latest Jobs, Results & Updates</title>
+<title>Online Update - Latest Jobs, Results, Admit Card & Government Updates</title>
+
+<meta name="description" content="Online Update - Latest Government Jobs, Results, Admit Card, University Updates, Scholarship, Sarkari Yojana and important updates.">
+<meta name="keywords" content="Latest Jobs, Government Jobs, Results, Admit Card, University Result, Scholarship, Sarkari Yojana">
 
 <style>
+
+/* =========================
+   BASIC RESET
+========================= */
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f4f6f8;
-  color:#222;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#222;
+    line-height:1.6;
 }
 
+/* =========================
+   HEADER
+========================= */
+
 header{
-  background:#111827;
-  color:white;
-  padding:18px 15px;
+    background:linear-gradient(135deg,#0b1220,#151f33);
+    color:white;
+    padding:30px 20px;
+}
+
+.header-container{
+    max-width:1150px;
+    margin:auto;
 }
 
 .logo{
-  font-size:26px;
-  font-weight:bold;
+    font-size:32px;
+    font-weight:800;
+    letter-spacing:.5px;
 }
 
 .tagline{
-  margin-top:5px;
-  color:#d1d5db;
-  font-size:14px;
+    margin-top:8px;
+    color:#d7dce5;
+    font-size:16px;
 }
 
+/* =========================
+   NAVIGATION
+========================= */
+
 nav{
-  background:#dc2626;
-  padding:12px;
-  overflow-x:auto;
-  white-space:nowrap;
+    background:#e32626;
+    box-shadow:0 3px 12px rgba(0,0,0,.12);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-container{
+    max-width:1150px;
+    margin:auto;
+    display:flex;
+    overflow-x:auto;
+    white-space:nowrap;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-right:18px;
-  font-weight:bold;
-  font-size:14px;
+    color:white;
+    text-decoration:none;
+    padding:16px 20px;
+    display:block;
+    font-size:15px;
+    font-weight:700;
+    transition:.2s;
 }
+
+nav a:hover{
+    background:#b91c1c;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
 
 .container{
-  max-width:1100px;
-  margin:auto;
-  padding:15px;
+    max-width:1150px;
+    margin:auto;
+    padding:25px 15px;
 }
 
-.search{
-  background:white;
-  padding:15px;
-  margin-bottom:15px;
-  border-radius:8px;
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    background:linear-gradient(135deg,#111827,#18243a);
+    color:white;
+    border-radius:16px;
+    padding:42px 30px;
+    margin-bottom:22px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
 
-.search input{
-  width:100%;
-  padding:13px;
-  border:1px solid #ddd;
-  border-radius:5px;
-  font-size:15px;
+.hero h1{
+    font-size:38px;
+    margin-bottom:10px;
+    line-height:1.2;
 }
+
+.hero p{
+    color:#d5dae3;
+    font-size:18px;
+    max-width:750px;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box{
+    background:white;
+    padding:18px;
+    border-radius:14px;
+    box-shadow:0 4px 18px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.search-box input{
+    width:100%;
+    padding:15px 16px;
+    border:1px solid #d7dce2;
+    border-radius:9px;
+    outline:none;
+    font-size:16px;
+    transition:.2s;
+}
+
+.search-box input:focus{
+    border-color:#e32626;
+    box-shadow:0 0 0 3px rgba(227,38,38,.1);
+}
+
+/* =========================
+   NOTICE
+========================= */
 
 .notice{
-  background:#fff3cd;
-  padding:12px;
-  border-left:5px solid #f59e0b;
-  margin-bottom:18px;
-  font-size:14px;
+    background:#fff7d6;
+    border-left:5px solid #f0ad00;
+    padding:14px 16px;
+    border-radius:8px;
+    margin-bottom:28px;
+    font-size:14px;
 }
 
-h2{
-  background:#111827;
-  color:white;
-  padding:10px;
-  margin:20px 0 10px;
-  border-radius:5px;
-  font-size:20px;
+.notice b{
+    color:#8a5a00;
 }
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:28px 0 18px;
+}
+
+.section-title span{
+    width:6px;
+    height:35px;
+    background:#e32626;
+    border-radius:5px;
+}
+
+.section-title h2{
+    font-size:28px;
+    color:#111827;
+}
+
+/* =========================
+   CARDS GRID
+========================= */
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:12px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
 
 .card{
-  background:white;
-  padding:18px;
-  border-radius:8px;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
+    background:white;
+    border-radius:14px;
+    padding:22px;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+    border:1px solid #edf0f3;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:#fff0f0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    margin-bottom:15px;
 }
 
 .card h3{
-  color:#dc2626;
-  margin-bottom:8px;
+    color:#111827;
+    font-size:20px;
+    margin-bottom:8px;
 }
 
 .card p{
-  font-size:14px;
-  line-height:1.5;
-  color:#555;
+    color:#606770;
+    font-size:14px;
+    line-height:1.7;
 }
 
 .card a{
-  display:inline-block;
-  margin-top:12px;
-  background:#dc2626;
-  color:white;
-  text-decoration:none;
-  padding:8px 12px;
-  border-radius:4px;
-  font-size:13px;
+    display:inline-block;
+    margin-top:15px;
+    background:#e32626;
+    color:white;
+    text-decoration:none;
+    padding:9px 14px;
+    border-radius:6px;
+    font-size:13px;
+    font-weight:bold;
+    transition:.2s;
 }
+
+.card a:hover{
+    background:#b91c1c;
+}
+
+/* =========================
+   UPDATE LIST
+========================= */
+
+.update-list{
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+}
+
+.update-item{
+    padding:18px 20px;
+    border-bottom:1px solid #eee;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.update-item:last-child{
+    border-bottom:none;
+}
+
+.update-content h3{
+    font-size:17px;
+    color:#111827;
+    margin-bottom:5px;
+}
+
+.update-content p{
+    font-size:13px;
+    color:#666;
+}
+
+.update-button{
+    flex-shrink:0;
+}
+
+.update-button a{
+    background:#111827;
+    color:white;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:6px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.quick-links{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.quick-link{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    text-decoration:none;
+    color:#111827;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+    border:1px solid #eee;
+    transition:.2s;
+}
+
+.quick-link:hover{
+    transform:translateY(-3px);
+    border-color:#e32626;
+}
+
+.quick-link .icon{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.quick-link strong{
+    display:block;
+    font-size:15px;
+}
+
+.quick-link small{
+    color:#777;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-  margin-top:30px;
-  background:#111827;
-  color:white;
-  text-align:center;
-  padding:25px 15px;
+    background:#111827;
+    color:white;
+    margin-top:45px;
+    padding:35px 15px 20px;
 }
 
-footer a{
-  color:#ddd;
-  margin:0 8px;
-  text-decoration:none;
-  font-size:13px;
+.footer-container{
+    max-width:1150px;
+    margin:auto;
 }
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
+}
+
+.footer-box h3{
+    margin-bottom:12px;
+    font-size:19px;
+}
+
+.footer-box p{
+    color:#cbd1da;
+    font-size:14px;
+}
+
+.footer-box a{
+    display:block;
+    color:#cbd1da;
+    text-decoration:none;
+    margin:7px 0;
+    font-size:14px;
+}
+
+.footer-box a:hover{
+    color:white;
+}
+
+.copyright{
+    border-top:1px solid #2d3748;
+    margin-top:25px;
+    padding-top:18px;
+    text-align:center;
+    color:#aeb6c2;
+    font-size:13px;
+}
+
+/* =========================
+   NO RESULT
+========================= */
+
+.no-result{
+    display:none;
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    color:#777;
+    margin-top:15px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .quick-links{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    header{
+        padding:25px 16px;
+    }
+
+    .logo{
+        font-size:27px;
+    }
+
+    .tagline{
+        font-size:14px;
+    }
+
+    nav a{
+        padding:14px 16px;
+        font-size:14px;
+    }
+
+    .container{
+        padding:18px 12px;
+    }
+
+    .hero{
+        padding:30px 22px;
+        border-radius:14px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .quick-links{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .section-title h2{
+        font-size:24px;
+    }
+
+    .update-item{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .update-button{
+        margin-top:5px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
-  <div class="logo">ONLINE UPDATE</div>
-  <div class="tagline">
-    Latest Jobs, Results, Admit Card & Government Updates
-  </div>
+
+    <div class="header-container">
+
+        <div class="logo">
+            ONLINE UPDATE
+        </div>
+
+        <div class="tagline">
+            Latest Jobs, Results, Admit Card & Government Updates
+        </div>
+
+    </div>
+
 </header>
 
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <nav>
-  <a href="#">Home</a>
-  <a href="jobs.html">Latest Jobs</a>
-  <a href="results.html">Results</a>
-  <a href="admit-card.html">Admit Card</a>
-  <a href="university.html">University</a>
-  <a href="#">Scholarship</a>
-  <a href="#">Sarkari Yojana</a>
+
+    <div class="nav-container">
+
+        <a href="index.html">Home</a>
+
+        <a href="jobs.html">Latest Jobs</a>
+
+        <a href="results.html">Results</a>
+
+        <a href="admit-card.html">Admit Card</a>
+
+        <a href="university.html">University</a>
+
+        <a href="#scholarship">Scholarship</a>
+
+        <a href="#yojana">Sarkari Yojana</a>
+
+    </div>
+
 </nav>
 
-<div class="container">
 
-  <div class="search">
-    <input type="text" placeholder="Search Jobs, Results, Admit Card etc...">
-  </div>
+<!-- =========================
+     MAIN
+========================= -->
 
-  <div class="notice">
-    📢 <b>Latest Update:</b> सभी महत्वपूर्ण जानकारी के लिए Official Website जरूर देखें।
-  </div>
+<main class="container">
 
-  <h2>Latest Updates</h2>
 
-  <div class="grid">
+    <!-- HERO -->
 
-    <div class="card">
-      <h3>Latest Job Update</h3>
-      <p>नई सरकारी नौकरी और भर्ती से जुड़ी महत्वपूर्ण जानकारी यहाँ मिलेगी।</p>
-      <a href="#">Read More</a>
+    <section class="hero">
+
+        <h1>
+            Latest Updates 2026
+        </h1>
+
+        <p>
+            Latest Government Jobs, Results, Admit Card,
+            University Updates, Scholarship & Sarkari Yojana
+            ki important information ek hi jagah.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Jobs, Results, Admit Card, University etc..."
+            onkeyup="searchContent()"
+        >
+
     </div>
 
-    <div class="card">
-      <h3>Latest Result</h3>
-      <p>University, Board और अन्य परीक्षा के Result की जानकारी।</p>
-      <a href="#">Check Result</a>
+
+    <!-- NOTICE -->
+
+    <div class="notice">
+
+        🔔
+        <b>Latest Update:</b>
+        सभी महत्वपूर्ण जानकारी के लिए Official Website जरूर देखें।
+
     </div>
 
-    <div class="card">
-      <h3>Admit Card</h3>
-      <p>नई परीक्षा के Admit Card और परीक्षा तिथि की जानकारी।</p>
-      <a href="#">View Update</a>
+
+    <!-- =========================
+         LATEST UPDATES
+    ========================= -->
+
+    <div class="section-title">
+
+        <span></span>
+
+        <h2>Latest Updates</h2>
+
     </div>
 
-  </div>
 
-  <h2>Important Categories</h2>
+    <div class="grid" id="contentGrid">
 
-  <div class="grid">
 
-    <div class="card">
-      <h3>🎓 University Update</h3>
-      <p>University Admission, Exam, Result और अन्य Updates.</p>
-      <a href="#">View More</a>
+        <!-- JOB -->
+
+        <div class="card searchable">
+
+            <div class="card-icon">
+                💼
+            </div>
+
+            <h3>
+                Latest Government Jobs
+            </h3>
+
+            <p>
+                नई सरकारी नौकरी, भर्ती, आवेदन की तारीख,
+                योग्यता और महत्वपूर्ण जानकारी यहाँ मिलेगी।
+            </p>
+
+            <a href="jobs.html">
+                View Latest Jobs →
+            </a>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div class="card searchable">
+
+            <div class="card-icon">
+                📊
+            </div>
+
+            <h3>
+                Latest Results
+            </h3>
+
+            <p>
+                University, Board और Competitive Exam
+                के latest result की जानकारी यहाँ मिलेगी।
+            </p>
+
+            <a href="results.html">
+                Check Results →
+            </a>
+
+        </div>
+
+
+        <!-- ADMIT CARD -->
+
+        <div class="card searchable">
+
+            <div class="card-icon">
+                🎫
+            </div>
+
+            <h3>
+                Admit Card
+            </h3>
+
+            <p>
+                सरकारी परीक्षा के Admit Card और
+                परीक्षा तिथि की जानकारी यहाँ मिलेगी।
+            </p>
+
+            <a href="admit-card.html">
+                View Admit Card →
+            </a>
+
+        </div>
+
+
     </div>
 
-    <div class="card">
-      <h3>📚 Scholarship</h3>
-      <p>Scholarship Form, Last Date और जरूरी जानकारी।</p>
-      <a href="#">View More</a>
+
+    <div class="no-result" id="noResult">
+
+        कोई जानकारी नहीं मिली।
+
     </div>
 
-    <div class="card">
-      <h3>🏛️ Sarkari Yojana</h3>
-      <p>सरकारी योजनाओं और आवेदन से संबंधित जानकारी।</p>
-      <a href="#">View More</a>
+
+    <!-- =========================
+         QUICK ACCESS
+    ========================= -->
+
+    <div class="section-title">
+
+        <span></span>
+
+        <h2>Quick Access</h2>
+
     </div>
 
-    <div class="card">
-      <h3>📝 Admission</h3>
-      <p>College और University Admission की जानकारी।</p>
-      <a href="#">View More</a>
+
+    <div class="quick-links">
+
+
+        <a href="jobs.html" class="quick-link">
+
+            <div class="icon">💼</div>
+
+            <strong>Latest Jobs</strong>
+
+            <small>नई सरकारी नौकरी</small>
+
+        </a>
+
+
+        <a href="results.html" class="quick-link">
+
+            <div class="icon">📊</div>
+
+            <strong>Results</strong>
+
+            <small>Latest Result</small>
+
+        </a>
+
+
+        <a href="admit-card.html" class="quick-link">
+
+            <div class="icon">🎫</div>
+
+            <strong>Admit Card</strong>
+
+            <small>Download Admit Card</small>
+
+        </a>
+
+
+        <a href="university.html" class="quick-link">
+
+            <div class="icon">🎓</div>
+
+            <strong>University</strong>
+
+            <small>University Updates</small>
+
+        </a>
+
+
     </div>
 
-    <div class="card">
-      <h3>📖 Syllabus</h3>
-      <p>Exam Syllabus और तैयारी से संबंधित जानकारी।</p>
-      <a href="#">View More</a>
+
+    <!-- =========================
+         IMPORTANT CATEGORIES
+    ========================= -->
+
+    <div class="section-title">
+
+        <span></span>
+
+        <h2>Important Categories</h2>
+
     </div>
 
-    <div class="card">
-      <h3>🔧 Important Tools</h3>
-      <p>Online उपयोगी Tools और सरकारी सेवाओं की जानकारी।</p>
-      <a href="#">View More</a>
+
+    <div class="grid">
+
+
+        <!-- UNIVERSITY -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                🎓
+            </div>
+
+            <h3>
+                University Updates
+            </h3>
+
+            <p>
+                University Admission, Exam, Result,
+                Semester और अन्य महत्वपूर्ण Updates।
+            </p>
+
+            <a href="university.html">
+                View More →
+            </a>
+
+        </div>
+
+
+        <!-- SCHOLARSHIP -->
+
+        <div class="card" id="scholarship">
+
+            <div class="card-icon">
+                🎓
+            </div>
+
+            <h3>
+                Scholarship
+            </h3>
+
+            <p>
+                Scholarship Form, Last Date और
+                जरूरी जानकारी यहाँ मिलेगी।
+            </p>
+
+            <a href="#">
+                View More →
+            </a>
+
+        </div>
+
+
+        <!-- SARKARI YOJANA -->
+
+        <div class="card" id="yojana">
+
+            <div class="card-icon">
+                🏛️
+            </div>
+
+            <h3>
+                Sarkari Yojana
+            </h3>
+
+            <p>
+                सरकारी योजनाओं और आवेदन से संबंधित
+                महत्वपूर्ण जानकारी।
+            </p>
+
+            <a href="#">
+                View More →
+            </a>
+
+        </div>
+
+
+        <!-- ADMISSION -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                📝
+            </div>
+
+            <h3>
+                Admission
+            </h3>
+
+            <p>
+                College और University Admission
+                की जानकारी यहाँ मिलेगी।
+            </p>
+
+            <a href="#">
+                View More →
+            </a>
+
+        </div>
+
+
+        <!-- SYLLABUS -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                📚
+            </div>
+
+            <h3>
+                Syllabus
+            </h3>
+
+            <p>
+                Exam Syllabus और परीक्षा से संबंधित
+                महत्वपूर्ण जानकारी।
+            </p>
+
+            <a href="#">
+                View More →
+            </a>
+
+        </div>
+
+
+        <!-- TOOLS -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                🛠️
+            </div>
+
+            <h3>
+                Important Tools
+            </h3>
+
+            <p>
+                Online उपयोगी Tools और सरकारी
+                सेवाओं की जानकारी।
+            </p>
+
+            <a href="#">
+                View More →
+            </a>
+
+        </div>
+
+
     </div>
 
-  </div>
 
-</div>
+    <!-- =========================
+         RECENT UPDATES
+    ========================= -->
+
+    <div class="section-title">
+
+        <span></span>
+
+        <h2>Recent Updates</h2>
+
+    </div>
+
+
+    <div class="update-list">
+
+
+        <div class="update-item">
+
+            <div class="update-content">
+
+                <h3>
+                    Latest Government Job Updates
+                </h3>
+
+                <p>
+                    नई भर्ती और सरकारी नौकरी की जानकारी।
+                </p>
+
+            </div>
+
+            <div class="update-button">
+
+                <a href="jobs.html">
+                    View
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="update-item">
+
+            <div class="update-content">
+
+                <h3>
+                    Latest University Results
+                </h3>
+
+                <p>
+                    University और Board Results की जानकारी।
+                </p>
+
+            </div>
+
+            <div class="update-button">
+
+                <a href="results.html">
+                    View
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="update-item">
+
+            <div class="update-content">
+
+                <h3>
+                    Latest Admit Card
+                </h3>
+
+                <p>
+                    Upcoming exams के Admit Card updates।
+                </p>
+
+            </div>
+
+            <div class="update-button">
+
+                <a href="admit-card.html">
+                    View
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="update-item">
+
+            <div class="update-content">
+
+                <h3>
+                    University Admission Updates
+                </h3>
+
+                <p>
+                    University Admission और Exam updates।
+                </p>
+
+            </div>
+
+            <div class="update-button">
+
+                <a href="university.html">
+                    View
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
-  <p>© 2026 Online Update. All Rights Reserved.</p>
-  <br>
-  <a href="#">About Us</a>
-  <a href="#">Contact Us</a>
-  <a href="#">Privacy Policy</a>
-  <a href="#">Disclaimer</a>
+
+    <div class="footer-container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-box">
+
+                <h3>
+                    ONLINE UPDATE
+                </h3>
+
+                <p>
+                    Latest Government Jobs, Results,
+                    Admit Card, University Updates,
+                    Scholarship और Sarkari Yojana की
+                    महत्वपूर्ण जानकारी एक जगह।
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="jobs.html">
+                    Latest Jobs
+                </a>
+
+                <a href="results.html">
+                    Results
+                </a>
+
+                <a href="admit-card.html">
+                    Admit Card
+                </a>
+
+                <a href="university.html">
+                    University
+                </a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>
+                    Important
+                </h3>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Disclaimer
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Online Update. All Rights Reserved.
+
+        </div>
+
+    </div>
+
 </footer>
+
+
+<!-- =========================
+     SEARCH JAVASCRIPT
+========================= -->
+
+<script>
+
+function searchContent(){
+
+    let input =
+        document.getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+    let cards =
+        document.querySelectorAll(".searchable");
+
+    let found = false;
+
+    cards.forEach(function(card){
+
+        let text =
+            card.innerText.toLowerCase();
+
+        if(text.includes(input)){
+
+            card.style.display = "";
+
+            found = true;
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+    let noResult =
+        document.getElementById("noResult");
+
+    if(input !== "" && !found){
+
+        noResult.style.display = "block";
+
+    }else{
+
+        noResult.style.display = "none";
+
+    }
+
+}
+
+</script>
 
 </body>
 </html>
